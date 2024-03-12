@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import <XPYAVKit/XPYAVKit.h>
 
-@interface ViewController ()
+@interface ViewController ()<XPYAudioCaptureDelegate>
 
 @property (nonatomic, strong) XPYAudioCapture *audioCapture;
 
@@ -29,11 +29,21 @@
     } else {
         [self.audioCapture startCapturing];
     }
+    running = !running;
+}
+
+- (void)audioCaptureDidOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer {
+    
+}
+
+- (void)audioCaptureError:(NSError *)error {
+    
 }
 
 - (XPYAudioCapture *)audioCapture {
     if (!_audioCapture) {
         _audioCapture = [[XPYAudioCapture alloc] init];
+        _audioCapture.delegate = self;
     }
     return _audioCapture;
 }

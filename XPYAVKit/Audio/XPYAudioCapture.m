@@ -60,14 +60,16 @@
 }
 
 - (void)stopCapturing {
-    // 停止采集
-    OSStatus status = AudioOutputUnitStop(_audioCaptureInstance);
-    if (status != noErr) {
-        NSError *error = [NSError errorWithDomain:NSStringFromClass(self.class) code:status userInfo:nil];
-        if (self.delegate && [self.delegate respondsToSelector:@selector(audioCaptureError:)]) {
-            [self.delegate audioCaptureError:error];
+    dispatch_async(self.captureQueue, ^{
+        // 停止采集
+        OSStatus status = AudioOutputUnitStop(self.audioCaptureInstance);
+        if (status != noErr) {
+            NSError *error = [NSError errorWithDomain:NSStringFromClass(self.class) code:status userInfo:nil];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(audioCaptureError:)]) {
+                [self.delegate audioCaptureError:error];
+            }
         }
-    }
+    });
 }
 
 /// 创建音频采集实例
@@ -92,7 +94,7 @@
         return;
     }
     
-    // 开启 Input Bus
+    // 开启 Input Bus（采集只需要 Element1）
     UInt32 input_enable = 1;
     status = AudioUnitSetProperty(_audioCaptureInstance, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Input, XPYInputBus, &input_enable, sizeof(input_enable));
     if (status != noErr) {
@@ -101,7 +103,7 @@
         return;
     }
     
-    // 关闭 Output Bus
+    // 关闭 Output Bus（Element0）
     UInt32 output_disable = 0;
     AudioUnitSetProperty(_audioCaptureInstance, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Output, XPYOutputBus, &output_disable, sizeof(output_disable));
     

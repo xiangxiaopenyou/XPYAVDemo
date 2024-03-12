@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) XPYAudioConfig *config;
 
-@property (nonatomic, copy) id<XPYAudioCaptureDelegate> delegate;
+@property (nonatomic, weak) id<XPYAudioCaptureDelegate> delegate;
 
 - (instancetype)initWithConfig:(XPYAudioConfig *)config;
 
