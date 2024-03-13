@@ -53,7 +53,21 @@ const AudioUnitElement XPYInputBus = 1;
     }
     CFRelease(formatDescription);
     return sampleBuffer;
-    
+}
+
++ (BOOL)setupAudioSession {
+    NSError *error = nil;
+    // 分类、模式、分类选项
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord mode:AVAudioSessionModeVideoRecording options:AVAudioSessionCategoryOptionMixWithOthers | AVAudioSessionCategoryOptionDefaultToSpeaker error:&error];
+    if (error) {
+        return NO;
+    }
+    // 激活 session
+    [[AVAudioSession sharedInstance] setActive:YES error:&error];
+    if (error) {
+        return NO;
+    }
+    return YES;
 }
 
 @end

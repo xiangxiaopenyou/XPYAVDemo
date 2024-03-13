@@ -6,7 +6,7 @@
 //
 
 #import "XPYAudioCapture.h"
-#import "XPYAudioConfig.h"
+#import <XPYAVKit/XPYAudioConfig.h>
 #import "XPYAVUtils.h"
 #import <mach/mach_time.h>
 
@@ -31,10 +31,20 @@
 - (instancetype)initWithConfig:(XPYAudioConfig *)config {
     self = [super init];
     if (self) {
+        BOOL setup = [XPYAVUtils setupAudioSession];
+        NSAssert(setup, @"Setup audio session failed!");
         _config = config;
         _captureQueue = dispatch_queue_create("com.xpy.audioCaptureQueue", DISPATCH_QUEUE_SERIAL);
     }
     return self;
+}
+
+- (void)dealloc {
+    if (_audioCaptureInstance) {
+        AudioOutputUnitStop(_audioCaptureInstance);
+        AudioComponentInstanceDispose(_audioCaptureInstance);
+        _audioCaptureInstance = NULL;
+    }
 }
 
 - (void)startCapturing {

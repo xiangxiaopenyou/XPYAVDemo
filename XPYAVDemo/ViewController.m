@@ -33,7 +33,15 @@
 }
 
 - (void)audioCaptureDidOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer {
-    
+    if (!sampleBuffer) {
+        return;
+    }
+    // 数据转换
+    size_t lengthAtOffsetOut, totalLengthOut;
+    char *dataPointOut;
+    CMBlockBufferRef blockBuffer = CMSampleBufferGetDataBuffer(sampleBuffer);
+    CMBlockBufferGetDataPointer(blockBuffer, 0, &lengthAtOffsetOut, &totalLengthOut, &dataPointOut);
+    NSData *audioData = [NSData dataWithBytes:dataPointOut length:totalLengthOut];
 }
 
 - (void)audioCaptureError:(NSError *)error {
