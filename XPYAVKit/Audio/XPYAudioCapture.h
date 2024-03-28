@@ -8,7 +8,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-@class XPYAudioConfig;
+@class XPYAudioCaptureConfig;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,15 +24,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XPYAudioCapture : NSObject
 
-@property (nonatomic, strong, readonly) XPYAudioConfig *config;
+@property (nonatomic, strong, readonly) XPYAudioCaptureConfig *config;
 
 @property (nonatomic, weak) id<XPYAudioCaptureDelegate> delegate;
 
-- (instancetype)initWithConfig:(XPYAudioConfig *)config;
+- (instancetype)initWithConfig:(XPYAudioCaptureConfig *)config;
 
 - (void)startCapturing;
 
 - (void)stopCapturing;
+
+@end
+
+@interface XPYAudioCaptureConfig : NSObject
+
+/// 声道数，默认为 2
+@property (nonatomic, assign) NSUInteger channelsNumber;
+/// 采样率，默认为 44100
+@property (nonatomic, assign) NSUInteger samplingRate;
+/// 量化位深，默认为 16
+@property (nonatomic, assign) NSUInteger bitDepth;
 
 @end
 

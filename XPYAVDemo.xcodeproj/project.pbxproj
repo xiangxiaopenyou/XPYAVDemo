@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD371C1E2BA41A81005BD049 /* XPYAudioEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CD371C1C2BA41A81005BD049 /* XPYAudioEncoder.h */; };
+		CD371C1F2BA41A81005BD049 /* XPYAudioEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD371C1D2BA41A81005BD049 /* XPYAudioEncoder.m */; };
+		CD6008F42BAA899500897577 /* XPYVideoEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008F22BAA899500897577 /* XPYVideoEncoder.h */; };
+		CD6008F52BAA899500897577 /* XPYVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008F32BAA899500897577 /* XPYVideoEncoder.m */; };
+		CD6008F82BAA8A1800897577 /* XPYVideoCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008F62BAA8A1800897577 /* XPYVideoCapture.h */; };
+		CD6008F92BAA8A1800897577 /* XPYVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */; };
+		CD6008FF2BB29C7D00897577 /* XPYMediaWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */; };
+		CD6009002BB29C7D00897577 /* XPYMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */; };
 		CDFDAB2F2B9ED5BB00C088C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB2E2B9ED5BB00C088C1 /* AppDelegate.m */; };
 		CDFDAB322B9ED5BB00C088C1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB312B9ED5BB00C088C1 /* SceneDelegate.m */; };
 		CDFDAB352B9ED5BB00C088C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB342B9ED5BB00C088C1 /* ViewController.m */; };
@@ -18,12 +26,11 @@
 		CDFDAB502B9ED6FE00C088C1 /* XPYAVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFDAB4D2B9ED6FE00C088C1 /* XPYAVKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDFDAB532B9ED6FE00C088C1 /* XPYAVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDAB4B2B9ED6FE00C088C1 /* XPYAVKit.framework */; };
 		CDFDAB542B9ED6FE00C088C1 /* XPYAVKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDAB4B2B9ED6FE00C088C1 /* XPYAVKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDFDAB5D2B9ED74300C088C1 /* XPYAudioConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFDAB5B2B9ED74300C088C1 /* XPYAudioConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDFDAB5E2B9ED74300C088C1 /* XPYAudioConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB5C2B9ED74300C088C1 /* XPYAudioConfig.m */; };
 		CDFDAB612B9ED9F200C088C1 /* XPYAudioCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFDAB5F2B9ED9F200C088C1 /* XPYAudioCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDFDAB622B9ED9F200C088C1 /* XPYAudioCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB602B9ED9F200C088C1 /* XPYAudioCapture.m */; };
-		CDFDAB652B9F0BAB00C088C1 /* XPYAVUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFDAB632B9F0BAB00C088C1 /* XPYAVUtils.h */; };
+		CDFDAB652B9F0BAB00C088C1 /* XPYAVUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFDAB632B9F0BAB00C088C1 /* XPYAVUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDFDAB662B9F0BAB00C088C1 /* XPYAVUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB642B9F0BAB00C088C1 /* XPYAVUtils.m */; };
+		CDFDAB682BA2DCE900C088C1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = CDFDAB672BA2DCE900C088C1 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD371C1C2BA41A81005BD049 /* XPYAudioEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAudioEncoder.h; sourceTree = "<group>"; };
+		CD371C1D2BA41A81005BD049 /* XPYAudioEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYAudioEncoder.m; sourceTree = "<group>"; };
+		CD6008F22BAA899500897577 /* XPYVideoEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYVideoEncoder.h; sourceTree = "<group>"; };
+		CD6008F32BAA899500897577 /* XPYVideoEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoEncoder.m; sourceTree = "<group>"; };
+		CD6008F62BAA8A1800897577 /* XPYVideoCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYVideoCapture.h; sourceTree = "<group>"; };
+		CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoCapture.m; sourceTree = "<group>"; };
+		CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMediaWriter.h; sourceTree = "<group>"; };
+		CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMediaWriter.m; sourceTree = "<group>"; };
 		CDFDAB2A2B9ED5BB00C088C1 /* XPYAVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPYAVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFDAB2D2B9ED5BB00C088C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDFDAB2E2B9ED5BB00C088C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,12 +81,11 @@
 		CDFDAB4B2B9ED6FE00C088C1 /* XPYAVKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XPYAVKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFDAB4D2B9ED6FE00C088C1 /* XPYAVKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAVKit.h; sourceTree = "<group>"; };
 		CDFDAB4E2B9ED6FE00C088C1 /* XPYAVKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = XPYAVKit.docc; sourceTree = "<group>"; };
-		CDFDAB5B2B9ED74300C088C1 /* XPYAudioConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAudioConfig.h; sourceTree = "<group>"; };
-		CDFDAB5C2B9ED74300C088C1 /* XPYAudioConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYAudioConfig.m; sourceTree = "<group>"; };
 		CDFDAB5F2B9ED9F200C088C1 /* XPYAudioCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAudioCapture.h; sourceTree = "<group>"; };
 		CDFDAB602B9ED9F200C088C1 /* XPYAudioCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYAudioCapture.m; sourceTree = "<group>"; };
 		CDFDAB632B9F0BAB00C088C1 /* XPYAVUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAVUtils.h; sourceTree = "<group>"; };
 		CDFDAB642B9F0BAB00C088C1 /* XPYAVUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYAVUtils.m; sourceTree = "<group>"; };
+		CDFDAB672BA2DCE900C088C1 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +134,7 @@
 				CDFDAB312B9ED5BB00C088C1 /* SceneDelegate.m */,
 				CDFDAB332B9ED5BB00C088C1 /* ViewController.h */,
 				CDFDAB342B9ED5BB00C088C1 /* ViewController.m */,
+				CDFDAB672BA2DCE900C088C1 /* PrivacyInfo.xcprivacy */,
 				CDFDAB362B9ED5BB00C088C1 /* Main.storyboard */,
 				CDFDAB392B9ED5BC00C088C1 /* Assets.xcassets */,
 				CDFDAB3B2B9ED5BC00C088C1 /* LaunchScreen.storyboard */,
@@ -132,6 +147,8 @@
 		CDFDAB4C2B9ED6FE00C088C1 /* XPYAVKit */ = {
 			isa = PBXGroup;
 			children = (
+				CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */,
+				CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */,
 				CDFDAB5A2B9ED72C00C088C1 /* Video */,
 				CDFDAB592B9ED72400C088C1 /* Audio */,
 				CDFDAB4D2B9ED6FE00C088C1 /* XPYAVKit.h */,
@@ -145,10 +162,10 @@
 		CDFDAB592B9ED72400C088C1 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				CDFDAB5B2B9ED74300C088C1 /* XPYAudioConfig.h */,
-				CDFDAB5C2B9ED74300C088C1 /* XPYAudioConfig.m */,
 				CDFDAB5F2B9ED9F200C088C1 /* XPYAudioCapture.h */,
 				CDFDAB602B9ED9F200C088C1 /* XPYAudioCapture.m */,
+				CD371C1C2BA41A81005BD049 /* XPYAudioEncoder.h */,
+				CD371C1D2BA41A81005BD049 /* XPYAudioEncoder.m */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -156,6 +173,10 @@
 		CDFDAB5A2B9ED72C00C088C1 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				CD6008F62BAA8A1800897577 /* XPYVideoCapture.h */,
+				CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */,
+				CD6008F22BAA899500897577 /* XPYVideoEncoder.h */,
+				CD6008F32BAA899500897577 /* XPYVideoEncoder.m */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -168,8 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFDAB502B9ED6FE00C088C1 /* XPYAVKit.h in Headers */,
-				CDFDAB5D2B9ED74300C088C1 /* XPYAudioConfig.h in Headers */,
+				CD6008FF2BB29C7D00897577 /* XPYMediaWriter.h in Headers */,
+				CD6008F82BAA8A1800897577 /* XPYVideoCapture.h in Headers */,
 				CDFDAB612B9ED9F200C088C1 /* XPYAudioCapture.h in Headers */,
+				CD6008F42BAA899500897577 /* XPYVideoEncoder.h in Headers */,
+				CD371C1E2BA41A81005BD049 /* XPYAudioEncoder.h in Headers */,
 				CDFDAB652B9F0BAB00C088C1 /* XPYAVUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFDAB682BA2DCE900C088C1 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6008F92BAA8A1800897577 /* XPYVideoCapture.m in Sources */,
 				CDFDAB662B9F0BAB00C088C1 /* XPYAVUtils.m in Sources */,
-				CDFDAB5E2B9ED74300C088C1 /* XPYAudioConfig.m in Sources */,
+				CD6008F52BAA899500897577 /* XPYVideoEncoder.m in Sources */,
 				CDFDAB4F2B9ED6FE00C088C1 /* XPYAVKit.docc in Sources */,
+				CD6009002BB29C7D00897577 /* XPYMediaWriter.m in Sources */,
+				CD371C1F2BA41A81005BD049 /* XPYAudioEncoder.m in Sources */,
 				CDFDAB622B9ED9F200C088C1 /* XPYAudioCapture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +539,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,7 +572,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

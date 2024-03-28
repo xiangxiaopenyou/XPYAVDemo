@@ -6,13 +6,12 @@
 //
 
 #import "XPYAudioCapture.h"
-#import <XPYAVKit/XPYAudioConfig.h>
 #import "XPYAVUtils.h"
 #import <mach/mach_time.h>
 
 @interface XPYAudioCapture ()
 
-@property (nonatomic, strong) XPYAudioConfig *config;
+@property (nonatomic, strong) XPYAudioCaptureConfig *config;
 /// 开始/停止采集操作串行队列
 @property (nonatomic, strong) dispatch_queue_t captureQueue;
 /// 音频采集实例
@@ -25,10 +24,10 @@
 @implementation XPYAudioCapture
 
 - (instancetype)init {
-    return [self initWithConfig:[XPYAudioConfig defaultConfig]];
+    return [self initWithConfig:[XPYAudioCaptureConfig new]];
 }
 
-- (instancetype)initWithConfig:(XPYAudioConfig *)config {
+- (instancetype)initWithConfig:(XPYAudioCaptureConfig *)config {
     self = [super init];
     if (self) {
         BOOL setup = [XPYAVUtils setupAudioSession];
@@ -197,4 +196,17 @@ static OSStatus audioCaptureCallBack(void *                            inRefCon,
 
 @end
 
+@implementation XPYAudioCaptureConfig
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _channelsNumber = 2;
+        _samplingRate = 44100;
+        _bitDepth = 16;
+    }
+    return self;
+}
+
+@end
 

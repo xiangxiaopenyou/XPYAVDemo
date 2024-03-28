@@ -9,6 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 媒体类型
+typedef NS_ENUM(NSInteger, XPYMediaType) {
+    XPYMediaTypeNone = 0,
+    XPYMediaTypeAudio = 1 << 0,  // 单音频
+    XPYMediaTypeVideo = 1 << 1,  // 单视频
+    XPYMediaTypeBoth = XPYMediaTypeAudio | XPYMediaTypeVideo   // 音视频
+};
+
 extern const AudioUnitElement XPYOutputBus;
 
 extern const AudioUnitElement XPYInputBus;
