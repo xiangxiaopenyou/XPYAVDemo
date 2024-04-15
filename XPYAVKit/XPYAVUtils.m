@@ -70,4 +70,16 @@ const AudioUnitElement XPYInputBus = 1;
     return YES;
 }
 
++ (BOOL)isKeyFrame:(CMSampleBufferRef)sampleBuffer {
+    CFArrayRef cfArray = CMSampleBufferGetSampleAttachmentsArray(sampleBuffer, true);
+    if (!cfArray) { return NO; }
+    
+    CFDictionaryRef dic = CFArrayGetValueAtIndex(cfArray, 0);
+    if (!dic) { return NO; }
+    
+    BOOL contains = !CFDictionaryContainsKey(dic, kCMSampleAttachmentKey_NotSync);
+    return contains;
+    
+}
+
 @end

@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD04F5772BB53D7E00F51B3E /* XPYMediaReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CD04F5752BB53D7E00F51B3E /* XPYMediaReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD04F5782BB53D7E00F51B3E /* XPYMediaReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD04F5762BB53D7E00F51B3E /* XPYMediaReader.m */; };
 		CD371C1E2BA41A81005BD049 /* XPYAudioEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CD371C1C2BA41A81005BD049 /* XPYAudioEncoder.h */; };
 		CD371C1F2BA41A81005BD049 /* XPYAudioEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD371C1D2BA41A81005BD049 /* XPYAudioEncoder.m */; };
-		CD6008F42BAA899500897577 /* XPYVideoEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008F22BAA899500897577 /* XPYVideoEncoder.h */; };
+		CD6008F42BAA899500897577 /* XPYVideoEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008F22BAA899500897577 /* XPYVideoEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD6008F52BAA899500897577 /* XPYVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008F32BAA899500897577 /* XPYVideoEncoder.m */; };
-		CD6008F82BAA8A1800897577 /* XPYVideoCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008F62BAA8A1800897577 /* XPYVideoCapture.h */; };
+		CD6008F82BAA8A1800897577 /* XPYVideoCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008F62BAA8A1800897577 /* XPYVideoCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD6008F92BAA8A1800897577 /* XPYVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */; };
-		CD6008FF2BB29C7D00897577 /* XPYMediaWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */; };
+		CD6008FF2BB29C7D00897577 /* XPYMediaWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD6009002BB29C7D00897577 /* XPYMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */; };
+		CDDF2EF22BB6BB6600043A79 /* fragment.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDDF2EF12BB6BB6600043A79 /* fragment.fsh */; };
+		CDDF2EF42BB6BB9300043A79 /* vertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CDDF2EF32BB6BB9300043A79 /* vertex.vsh */; };
+		CDDF2F012BBD466C00043A79 /* XPYRenderView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDF2EFF2BBD466C00043A79 /* XPYRenderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDDF2F022BBD466C00043A79 /* XPYRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF2F002BBD466C00043A79 /* XPYRenderView.m */; };
+		CDDF2F052BBD46D500043A79 /* XPYTextureFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDF2F032BBD46D500043A79 /* XPYTextureFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDDF2F062BBD46D500043A79 /* XPYTextureFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF2F042BBD46D500043A79 /* XPYTextureFrame.m */; };
+		CDDF2F0B2BBD48E900043A79 /* XPYGLShader.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDF2F092BBD48E900043A79 /* XPYGLShader.h */; };
+		CDDF2F0C2BBD48E900043A79 /* XPYGLShader.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF2F0A2BBD48E900043A79 /* XPYGLShader.m */; };
+		CDDF2F0F2BBD53B400043A79 /* XPYGLProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDF2F0D2BBD53B400043A79 /* XPYGLProgram.h */; };
+		CDDF2F102BBD53B400043A79 /* XPYGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF2F0E2BBD53B400043A79 /* XPYGLProgram.m */; };
+		CDDF2F1C2BC186B900043A79 /* XPYTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF2F1A2BC1827D00043A79 /* XPYTriangleView.m */; };
+		CDDF2F1D2BC186BE00043A79 /* XPYTriangleView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDF2F192BC1827D00043A79 /* XPYTriangleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDF2CDC32BC8E5D80073D276 /* XPYVideoDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF2CDC12BC8E5D80073D276 /* XPYVideoDecoder.h */; };
+		CDF2CDC42BC8E5D80073D276 /* XPYVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF2CDC22BC8E5D80073D276 /* XPYVideoDecoder.m */; };
+		CDF2CDC82BC905D70073D276 /* XPYEncoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF2CDC72BC905D70073D276 /* XPYEncoderViewController.m */; };
+		CDF2CDCB2BC9083E0073D276 /* XPYMuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF2CDCA2BC9083E0073D276 /* XPYMuxerViewController.m */; };
+		CDF2CDCD2BC93AFB0073D276 /* video_test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDF2CDCC2BC93AFB0073D276 /* video_test.mp4 */; };
 		CDFDAB2F2B9ED5BB00C088C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB2E2B9ED5BB00C088C1 /* AppDelegate.m */; };
 		CDFDAB322B9ED5BB00C088C1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB312B9ED5BB00C088C1 /* SceneDelegate.m */; };
 		CDFDAB352B9ED5BB00C088C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB342B9ED5BB00C088C1 /* ViewController.m */; };
@@ -58,6 +77,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD04F5752BB53D7E00F51B3E /* XPYMediaReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMediaReader.h; sourceTree = "<group>"; };
+		CD04F5762BB53D7E00F51B3E /* XPYMediaReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMediaReader.m; sourceTree = "<group>"; };
 		CD371C1C2BA41A81005BD049 /* XPYAudioEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAudioEncoder.h; sourceTree = "<group>"; };
 		CD371C1D2BA41A81005BD049 /* XPYAudioEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYAudioEncoder.m; sourceTree = "<group>"; };
 		CD6008F22BAA899500897577 /* XPYVideoEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYVideoEncoder.h; sourceTree = "<group>"; };
@@ -66,6 +87,25 @@
 		CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoCapture.m; sourceTree = "<group>"; };
 		CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMediaWriter.h; sourceTree = "<group>"; };
 		CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMediaWriter.m; sourceTree = "<group>"; };
+		CDDF2EF12BB6BB6600043A79 /* fragment.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = fragment.fsh; sourceTree = "<group>"; };
+		CDDF2EF32BB6BB9300043A79 /* vertex.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = vertex.vsh; sourceTree = "<group>"; };
+		CDDF2EFF2BBD466C00043A79 /* XPYRenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYRenderView.h; sourceTree = "<group>"; };
+		CDDF2F002BBD466C00043A79 /* XPYRenderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYRenderView.m; sourceTree = "<group>"; };
+		CDDF2F032BBD46D500043A79 /* XPYTextureFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTextureFrame.h; sourceTree = "<group>"; };
+		CDDF2F042BBD46D500043A79 /* XPYTextureFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTextureFrame.m; sourceTree = "<group>"; };
+		CDDF2F092BBD48E900043A79 /* XPYGLShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYGLShader.h; sourceTree = "<group>"; };
+		CDDF2F0A2BBD48E900043A79 /* XPYGLShader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYGLShader.m; sourceTree = "<group>"; };
+		CDDF2F0D2BBD53B400043A79 /* XPYGLProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYGLProgram.h; sourceTree = "<group>"; };
+		CDDF2F0E2BBD53B400043A79 /* XPYGLProgram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYGLProgram.m; sourceTree = "<group>"; };
+		CDDF2F192BC1827D00043A79 /* XPYTriangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTriangleView.h; sourceTree = "<group>"; };
+		CDDF2F1A2BC1827D00043A79 /* XPYTriangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTriangleView.m; sourceTree = "<group>"; };
+		CDF2CDC12BC8E5D80073D276 /* XPYVideoDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYVideoDecoder.h; sourceTree = "<group>"; };
+		CDF2CDC22BC8E5D80073D276 /* XPYVideoDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoDecoder.m; sourceTree = "<group>"; };
+		CDF2CDC62BC905D70073D276 /* XPYEncoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYEncoderViewController.h; sourceTree = "<group>"; };
+		CDF2CDC72BC905D70073D276 /* XPYEncoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYEncoderViewController.m; sourceTree = "<group>"; };
+		CDF2CDC92BC9083E0073D276 /* XPYMuxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMuxerViewController.h; sourceTree = "<group>"; };
+		CDF2CDCA2BC9083E0073D276 /* XPYMuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMuxerViewController.m; sourceTree = "<group>"; };
+		CDF2CDCC2BC93AFB0073D276 /* video_test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_test.mp4; sourceTree = "<group>"; };
 		CDFDAB2A2B9ED5BB00C088C1 /* XPYAVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPYAVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFDAB2D2B9ED5BB00C088C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDFDAB2E2B9ED5BB00C088C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +147,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDDF2EFB2BBD459D00043A79 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDAB5F2B9ED9F200C088C1 /* XPYAudioCapture.h */,
+				CDFDAB602B9ED9F200C088C1 /* XPYAudioCapture.m */,
+				CD6008F62BAA8A1800897577 /* XPYVideoCapture.h */,
+				CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		CDDF2EFC2BBD45BC00043A79 /* Coder */ = {
+			isa = PBXGroup;
+			children = (
+				CD371C1C2BA41A81005BD049 /* XPYAudioEncoder.h */,
+				CD371C1D2BA41A81005BD049 /* XPYAudioEncoder.m */,
+				CD6008F22BAA899500897577 /* XPYVideoEncoder.h */,
+				CD6008F32BAA899500897577 /* XPYVideoEncoder.m */,
+				CDF2CDC12BC8E5D80073D276 /* XPYVideoDecoder.h */,
+				CDF2CDC22BC8E5D80073D276 /* XPYVideoDecoder.m */,
+			);
+			path = Coder;
+			sourceTree = "<group>";
+		};
+		CDDF2EFD2BBD460B00043A79 /* Muxer */ = {
+			isa = PBXGroup;
+			children = (
+				CD04F5752BB53D7E00F51B3E /* XPYMediaReader.h */,
+				CD04F5762BB53D7E00F51B3E /* XPYMediaReader.m */,
+				CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */,
+				CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */,
+			);
+			path = Muxer;
+			sourceTree = "<group>";
+		};
+		CDDF2EFE2BBD463B00043A79 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				CDDF2F192BC1827D00043A79 /* XPYTriangleView.h */,
+				CDDF2F1A2BC1827D00043A79 /* XPYTriangleView.m */,
+				CDDF2EFF2BBD466C00043A79 /* XPYRenderView.h */,
+				CDDF2F002BBD466C00043A79 /* XPYRenderView.m */,
+				CDDF2F032BBD46D500043A79 /* XPYTextureFrame.h */,
+				CDDF2F042BBD46D500043A79 /* XPYTextureFrame.m */,
+				CDDF2F092BBD48E900043A79 /* XPYGLShader.h */,
+				CDDF2F0A2BBD48E900043A79 /* XPYGLShader.m */,
+				CDDF2F0D2BBD53B400043A79 /* XPYGLProgram.h */,
+				CDDF2F0E2BBD53B400043A79 /* XPYGLProgram.m */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		CDDF2F182BC1824800043A79 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		CDF2CDC52BC905960073D276 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CDF2CDC62BC905D70073D276 /* XPYEncoderViewController.h */,
+				CDF2CDC72BC905D70073D276 /* XPYEncoderViewController.m */,
+				CDF2CDC92BC9083E0073D276 /* XPYMuxerViewController.h */,
+				CDF2CDCA2BC9083E0073D276 /* XPYMuxerViewController.m */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		CDFDAB212B9ED5BB00C088C1 = {
 			isa = PBXGroup;
 			children = (
@@ -128,18 +238,23 @@
 		CDFDAB2C2B9ED5BB00C088C1 /* XPYAVDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CDF2CDC52BC905960073D276 /* Features */,
+				CDDF2F182BC1824800043A79 /* OpenGL */,
 				CDFDAB2D2B9ED5BB00C088C1 /* AppDelegate.h */,
 				CDFDAB2E2B9ED5BB00C088C1 /* AppDelegate.m */,
 				CDFDAB302B9ED5BB00C088C1 /* SceneDelegate.h */,
 				CDFDAB312B9ED5BB00C088C1 /* SceneDelegate.m */,
 				CDFDAB332B9ED5BB00C088C1 /* ViewController.h */,
 				CDFDAB342B9ED5BB00C088C1 /* ViewController.m */,
+				CDF2CDCC2BC93AFB0073D276 /* video_test.mp4 */,
 				CDFDAB672BA2DCE900C088C1 /* PrivacyInfo.xcprivacy */,
 				CDFDAB362B9ED5BB00C088C1 /* Main.storyboard */,
 				CDFDAB392B9ED5BC00C088C1 /* Assets.xcassets */,
 				CDFDAB3B2B9ED5BC00C088C1 /* LaunchScreen.storyboard */,
 				CDFDAB3E2B9ED5BC00C088C1 /* Info.plist */,
 				CDFDAB3F2B9ED5BC00C088C1 /* main.m */,
+				CDDF2EF12BB6BB6600043A79 /* fragment.fsh */,
+				CDDF2EF32BB6BB9300043A79 /* vertex.vsh */,
 			);
 			path = XPYAVDemo;
 			sourceTree = "<group>";
@@ -147,38 +262,16 @@
 		CDFDAB4C2B9ED6FE00C088C1 /* XPYAVKit */ = {
 			isa = PBXGroup;
 			children = (
-				CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */,
-				CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */,
-				CDFDAB5A2B9ED72C00C088C1 /* Video */,
-				CDFDAB592B9ED72400C088C1 /* Audio */,
+				CDDF2EFE2BBD463B00043A79 /* Render */,
+				CDDF2EFD2BBD460B00043A79 /* Muxer */,
+				CDDF2EFC2BBD45BC00043A79 /* Coder */,
+				CDDF2EFB2BBD459D00043A79 /* Capture */,
 				CDFDAB4D2B9ED6FE00C088C1 /* XPYAVKit.h */,
 				CDFDAB4E2B9ED6FE00C088C1 /* XPYAVKit.docc */,
 				CDFDAB632B9F0BAB00C088C1 /* XPYAVUtils.h */,
 				CDFDAB642B9F0BAB00C088C1 /* XPYAVUtils.m */,
 			);
 			path = XPYAVKit;
-			sourceTree = "<group>";
-		};
-		CDFDAB592B9ED72400C088C1 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				CDFDAB5F2B9ED9F200C088C1 /* XPYAudioCapture.h */,
-				CDFDAB602B9ED9F200C088C1 /* XPYAudioCapture.m */,
-				CD371C1C2BA41A81005BD049 /* XPYAudioEncoder.h */,
-				CD371C1D2BA41A81005BD049 /* XPYAudioEncoder.m */,
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
-		CDFDAB5A2B9ED72C00C088C1 /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				CD6008F62BAA8A1800897577 /* XPYVideoCapture.h */,
-				CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */,
-				CD6008F22BAA899500897577 /* XPYVideoEncoder.h */,
-				CD6008F32BAA899500897577 /* XPYVideoEncoder.m */,
-			);
-			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +283,17 @@
 			files = (
 				CDFDAB502B9ED6FE00C088C1 /* XPYAVKit.h in Headers */,
 				CD6008FF2BB29C7D00897577 /* XPYMediaWriter.h in Headers */,
+				CDDF2F012BBD466C00043A79 /* XPYRenderView.h in Headers */,
+				CDF2CDC32BC8E5D80073D276 /* XPYVideoDecoder.h in Headers */,
+				CD04F5772BB53D7E00F51B3E /* XPYMediaReader.h in Headers */,
+				CDDF2F0F2BBD53B400043A79 /* XPYGLProgram.h in Headers */,
 				CD6008F82BAA8A1800897577 /* XPYVideoCapture.h in Headers */,
 				CDFDAB612B9ED9F200C088C1 /* XPYAudioCapture.h in Headers */,
+				CDDF2F052BBD46D500043A79 /* XPYTextureFrame.h in Headers */,
 				CD6008F42BAA899500897577 /* XPYVideoEncoder.h in Headers */,
 				CD371C1E2BA41A81005BD049 /* XPYAudioEncoder.h in Headers */,
+				CDDF2F0B2BBD48E900043A79 /* XPYGLShader.h in Headers */,
+				CDDF2F1D2BC186BE00043A79 /* XPYTriangleView.h in Headers */,
 				CDFDAB652B9F0BAB00C088C1 /* XPYAVUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +352,7 @@
 					};
 					CDFDAB4A2B9ED6FE00C088C1 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -281,7 +382,10 @@
 			files = (
 				CDFDAB3D2B9ED5BC00C088C1 /* LaunchScreen.storyboard in Resources */,
 				CDFDAB3A2B9ED5BC00C088C1 /* Assets.xcassets in Resources */,
+				CDDF2EF22BB6BB6600043A79 /* fragment.fsh in Resources */,
+				CDDF2EF42BB6BB9300043A79 /* vertex.vsh in Resources */,
 				CDFDAB382B9ED5BB00C088C1 /* Main.storyboard in Resources */,
+				CDF2CDCD2BC93AFB0073D276 /* video_test.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +404,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF2CDCB2BC9083E0073D276 /* XPYMuxerViewController.m in Sources */,
 				CDFDAB352B9ED5BB00C088C1 /* ViewController.m in Sources */,
+				CDF2CDC82BC905D70073D276 /* XPYEncoderViewController.m in Sources */,
 				CDFDAB2F2B9ED5BB00C088C1 /* AppDelegate.m in Sources */,
 				CDFDAB402B9ED5BC00C088C1 /* main.m in Sources */,
 				CDFDAB322B9ED5BB00C088C1 /* SceneDelegate.m in Sources */,
@@ -311,13 +417,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF2CDC42BC8E5D80073D276 /* XPYVideoDecoder.m in Sources */,
 				CD6008F92BAA8A1800897577 /* XPYVideoCapture.m in Sources */,
+				CDDF2F062BBD46D500043A79 /* XPYTextureFrame.m in Sources */,
 				CDFDAB662B9F0BAB00C088C1 /* XPYAVUtils.m in Sources */,
+				CDDF2F022BBD466C00043A79 /* XPYRenderView.m in Sources */,
 				CD6008F52BAA899500897577 /* XPYVideoEncoder.m in Sources */,
+				CDDF2F102BBD53B400043A79 /* XPYGLProgram.m in Sources */,
 				CDFDAB4F2B9ED6FE00C088C1 /* XPYAVKit.docc in Sources */,
+				CDDF2F1C2BC186B900043A79 /* XPYTriangleView.m in Sources */,
 				CD6009002BB29C7D00897577 /* XPYMediaWriter.m in Sources */,
 				CD371C1F2BA41A81005BD049 /* XPYAudioEncoder.m in Sources */,
 				CDFDAB622B9ED9F200C088C1 /* XPYAudioCapture.m in Sources */,
+				CD04F5782BB53D7E00F51B3E /* XPYMediaReader.m in Sources */,
+				CDDF2F0C2BBD48E900043A79 /* XPYGLShader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,13 +590,14 @@
 				DEVELOPMENT_TEAM = 35A6KD62ZJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XPYAVDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "麦克风";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,13 +620,14 @@
 				DEVELOPMENT_TEAM = 35A6KD62ZJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XPYAVDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "麦克风";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,6 +643,7 @@
 		CDFDAB562B9ED6FE00C088C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -545,6 +661,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -552,6 +669,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -561,6 +680,7 @@
 		CDFDAB572B9ED6FE00C088C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -578,6 +698,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -585,6 +706,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

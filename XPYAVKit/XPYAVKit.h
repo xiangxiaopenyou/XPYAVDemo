@@ -7,7 +7,18 @@
 
 #import <Foundation/Foundation.h>
 #import <XPYAVKit/XPYAudioCapture.h>
-#import <XPYAVKit/XPYAudioConfig.h>
+#import <XPYAVKit/XPYVideoCapture.h>
+
+#import <XPYAVKit/XPYVideoEncoder.h>
+
+#import <XPYAVKit/XPYMediaReader.h>
+#import <XPYAVKit/XPYMediaWriter.h>
+
+#import <XPYAVKit/XPYRenderView.h>
+#import <XPYAVKit/XPYTriangleView.h>
+#import <XPYAVKit/XPYTextureFrame.h>
+
+#import <XPYAVKit/XPYAVUtils.h>
 
 //! Project version number for XPYAVKit.
 FOUNDATION_EXPORT double XPYAVKitVersionNumber;

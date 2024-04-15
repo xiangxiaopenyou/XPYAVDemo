@@ -32,6 +32,9 @@ extern const AudioUnitElement XPYInputBus;
 /// AVAudioSession 默认配置
 + (BOOL)setupAudioSession;
 
+/// 判断是否关键帧
++ (BOOL)isKeyFrame:(CMSampleBufferRef)sampleBuffer;
+
 @end
 
 NS_ASSUME_NONNULL_END
