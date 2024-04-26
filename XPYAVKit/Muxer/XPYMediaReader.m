@@ -18,6 +18,7 @@ static const int kXPYMaximumNumberInQueue = 3;
 @property (nonatomic, assign) BOOL containsVideoTrack;
 @property (nonatomic, assign) BOOL audioFinished;
 @property (nonatomic, assign) BOOL videoFinished;
+@property (nonatomic, assign) NSInteger frameRate;
 @property (nonatomic, assign) CGSize videoSize;
 @property (nonatomic, assign) CMTime duration;
 @property (nonatomic, assign) CMVideoCodecType codecType;
@@ -278,6 +279,9 @@ static const int kXPYMaximumNumberInQueue = 3;
                     self.audioFinished = self.reader.status == AVAssetReaderStatusCompleted || self.reader.status == AVAssetReaderStatusReading;
                     needLoadingAudio = NO;
                 }
+            } else {
+                // 超过限制不需要取帧
+                needLoadingAudio = NO;
             }
         }
     }
@@ -335,6 +339,9 @@ static const int kXPYMaximumNumberInQueue = 3;
         if (_containsVideoTrack) {
             // 图像变换信息
             _transform = videoTrack.preferredTransform;
+            
+            // 帧率
+            _frameRate = videoTrack.nominalFrameRate >= 1.0 ? (NSInteger)videoTrack.nominalFrameRate : 30;
             
             // 图像大小
             _videoSize = CGSizeApplyAffineTransform(videoTrack.naturalSize, videoTrack.preferredTransform);

@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define SHADER_STRING(text) @#text
-
 extern NSString * const XPYSimpleVertexShader;
 
 extern NSString * const XPYSimpleFragmentShader;

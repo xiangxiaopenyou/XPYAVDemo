@@ -7,6 +7,8 @@
 
 #import "XPYGLShader.h"
 
+#define SHADER_STRING(text) @#text
+
 NSString * const XPYSimpleVertexShader =  SHADER_STRING
 (
      attribute vec4 v_position;

@@ -10,6 +10,7 @@
 #import <XPYAVKit/XPYVideoCapture.h>
 
 #import <XPYAVKit/XPYVideoEncoder.h>
+#import <XPYAVKit/XPYVideoDecoder.h>
 
 #import <XPYAVKit/XPYMediaReader.h>
 #import <XPYAVKit/XPYMediaWriter.h>
@@ -19,6 +20,7 @@
 #import <XPYAVKit/XPYTextureFrame.h>
 
 #import <XPYAVKit/XPYAVUtils.h>
+#import <XPYAVKit/XPYVideoFrameSorter.h>
 
 //! Project version number for XPYAVKit.
 FOUNDATION_EXPORT double XPYAVKitVersionNumber;

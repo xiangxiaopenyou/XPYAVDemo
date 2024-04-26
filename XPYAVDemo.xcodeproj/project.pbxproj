@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28E4A0A262CCC75E0E40921E /* Pods_XPYAVDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C70EC12A457E5DAB323704E /* Pods_XPYAVDemo.framework */; };
 		CD04F5772BB53D7E00F51B3E /* XPYMediaReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CD04F5752BB53D7E00F51B3E /* XPYMediaReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD04F5782BB53D7E00F51B3E /* XPYMediaReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD04F5762BB53D7E00F51B3E /* XPYMediaReader.m */; };
 		CD371C1E2BA41A81005BD049 /* XPYAudioEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CD371C1C2BA41A81005BD049 /* XPYAudioEncoder.h */; };
@@ -17,6 +18,9 @@
 		CD6008F92BAA8A1800897577 /* XPYVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */; };
 		CD6008FF2BB29C7D00897577 /* XPYMediaWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD6009002BB29C7D00897577 /* XPYMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */; };
+		CD99014A2BD0C14100EDF31C /* XPYVideoFrameSorter.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9901482BD0C14100EDF31C /* XPYVideoFrameSorter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD99014B2BD0C14100EDF31C /* XPYVideoFrameSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9901492BD0C14100EDF31C /* XPYVideoFrameSorter.m */; };
+		CDA7EC8F2BD0FEA600CB0A14 /* final_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDA7EC8E2BD0FEA600CB0A14 /* final_video.mp4 */; };
 		CDDF2EF22BB6BB6600043A79 /* fragment.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDDF2EF12BB6BB6600043A79 /* fragment.fsh */; };
 		CDDF2EF42BB6BB9300043A79 /* vertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CDDF2EF32BB6BB9300043A79 /* vertex.vsh */; };
 		CDDF2F012BBD466C00043A79 /* XPYRenderView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDF2EFF2BBD466C00043A79 /* XPYRenderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,11 +33,10 @@
 		CDDF2F102BBD53B400043A79 /* XPYGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF2F0E2BBD53B400043A79 /* XPYGLProgram.m */; };
 		CDDF2F1C2BC186B900043A79 /* XPYTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF2F1A2BC1827D00043A79 /* XPYTriangleView.m */; };
 		CDDF2F1D2BC186BE00043A79 /* XPYTriangleView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDF2F192BC1827D00043A79 /* XPYTriangleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDF2CDC32BC8E5D80073D276 /* XPYVideoDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF2CDC12BC8E5D80073D276 /* XPYVideoDecoder.h */; };
+		CDF2CDC32BC8E5D80073D276 /* XPYVideoDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF2CDC12BC8E5D80073D276 /* XPYVideoDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDF2CDC42BC8E5D80073D276 /* XPYVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF2CDC22BC8E5D80073D276 /* XPYVideoDecoder.m */; };
 		CDF2CDC82BC905D70073D276 /* XPYEncoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF2CDC72BC905D70073D276 /* XPYEncoderViewController.m */; };
 		CDF2CDCB2BC9083E0073D276 /* XPYMuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF2CDCA2BC9083E0073D276 /* XPYMuxerViewController.m */; };
-		CDF2CDCD2BC93AFB0073D276 /* video_test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDF2CDCC2BC93AFB0073D276 /* video_test.mp4 */; };
 		CDFDAB2F2B9ED5BB00C088C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB2E2B9ED5BB00C088C1 /* AppDelegate.m */; };
 		CDFDAB322B9ED5BB00C088C1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB312B9ED5BB00C088C1 /* SceneDelegate.m */; };
 		CDFDAB352B9ED5BB00C088C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB342B9ED5BB00C088C1 /* ViewController.m */; };
@@ -77,6 +80,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F90135CEC710FA01C5E24B5 /* Pods-XPYAVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPYAVDemo.debug.xcconfig"; path = "Target Support Files/Pods-XPYAVDemo/Pods-XPYAVDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8C70EC12A457E5DAB323704E /* Pods_XPYAVDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPYAVDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB84C26EECE5C508112E57E /* Pods-XPYAVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPYAVDemo.release.xcconfig"; path = "Target Support Files/Pods-XPYAVDemo/Pods-XPYAVDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CD04F5752BB53D7E00F51B3E /* XPYMediaReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMediaReader.h; sourceTree = "<group>"; };
 		CD04F5762BB53D7E00F51B3E /* XPYMediaReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMediaReader.m; sourceTree = "<group>"; };
 		CD371C1C2BA41A81005BD049 /* XPYAudioEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAudioEncoder.h; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 		CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoCapture.m; sourceTree = "<group>"; };
 		CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMediaWriter.h; sourceTree = "<group>"; };
 		CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMediaWriter.m; sourceTree = "<group>"; };
+		CD9901482BD0C14100EDF31C /* XPYVideoFrameSorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYVideoFrameSorter.h; sourceTree = "<group>"; };
+		CD9901492BD0C14100EDF31C /* XPYVideoFrameSorter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoFrameSorter.m; sourceTree = "<group>"; };
+		CDA7EC8E2BD0FEA600CB0A14 /* final_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = final_video.mp4; sourceTree = "<group>"; };
 		CDDF2EF12BB6BB6600043A79 /* fragment.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = fragment.fsh; sourceTree = "<group>"; };
 		CDDF2EF32BB6BB9300043A79 /* vertex.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = vertex.vsh; sourceTree = "<group>"; };
 		CDDF2EFF2BBD466C00043A79 /* XPYRenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYRenderView.h; sourceTree = "<group>"; };
@@ -105,7 +114,6 @@
 		CDF2CDC72BC905D70073D276 /* XPYEncoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYEncoderViewController.m; sourceTree = "<group>"; };
 		CDF2CDC92BC9083E0073D276 /* XPYMuxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMuxerViewController.h; sourceTree = "<group>"; };
 		CDF2CDCA2BC9083E0073D276 /* XPYMuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMuxerViewController.m; sourceTree = "<group>"; };
-		CDF2CDCC2BC93AFB0073D276 /* video_test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_test.mp4; sourceTree = "<group>"; };
 		CDFDAB2A2B9ED5BB00C088C1 /* XPYAVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPYAVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFDAB2D2B9ED5BB00C088C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDFDAB2E2B9ED5BB00C088C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFDAB532B9ED6FE00C088C1 /* XPYAVKit.framework in Frameworks */,
+				28E4A0A262CCC75E0E40921E /* Pods_XPYAVDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +156,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		087A4B5D958F830FAB68FF2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C70EC12A457E5DAB323704E /* Pods_XPYAVDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FE191AC937611D7C2D04B7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F90135CEC710FA01C5E24B5 /* Pods-XPYAVDemo.debug.xcconfig */,
+				ADB84C26EECE5C508112E57E /* Pods-XPYAVDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD99014C2BD0C15D00EDF31C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDAB632B9F0BAB00C088C1 /* XPYAVUtils.h */,
+				CDFDAB642B9F0BAB00C088C1 /* XPYAVUtils.m */,
+				CD9901482BD0C14100EDF31C /* XPYVideoFrameSorter.h */,
+				CD9901492BD0C14100EDF31C /* XPYVideoFrameSorter.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		CDDF2EFB2BBD459D00043A79 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +260,8 @@
 				CDFDAB2C2B9ED5BB00C088C1 /* XPYAVDemo */,
 				CDFDAB4C2B9ED6FE00C088C1 /* XPYAVKit */,
 				CDFDAB2B2B9ED5BB00C088C1 /* Products */,
+				4FE191AC937611D7C2D04B7A /* Pods */,
+				087A4B5D958F830FAB68FF2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,7 +285,7 @@
 				CDFDAB312B9ED5BB00C088C1 /* SceneDelegate.m */,
 				CDFDAB332B9ED5BB00C088C1 /* ViewController.h */,
 				CDFDAB342B9ED5BB00C088C1 /* ViewController.m */,
-				CDF2CDCC2BC93AFB0073D276 /* video_test.mp4 */,
+				CDA7EC8E2BD0FEA600CB0A14 /* final_video.mp4 */,
 				CDFDAB672BA2DCE900C088C1 /* PrivacyInfo.xcprivacy */,
 				CDFDAB362B9ED5BB00C088C1 /* Main.storyboard */,
 				CDFDAB392B9ED5BC00C088C1 /* Assets.xcassets */,
@@ -262,14 +301,13 @@
 		CDFDAB4C2B9ED6FE00C088C1 /* XPYAVKit */ = {
 			isa = PBXGroup;
 			children = (
+				CD99014C2BD0C15D00EDF31C /* Tool */,
 				CDDF2EFE2BBD463B00043A79 /* Render */,
 				CDDF2EFD2BBD460B00043A79 /* Muxer */,
 				CDDF2EFC2BBD45BC00043A79 /* Coder */,
 				CDDF2EFB2BBD459D00043A79 /* Capture */,
 				CDFDAB4D2B9ED6FE00C088C1 /* XPYAVKit.h */,
 				CDFDAB4E2B9ED6FE00C088C1 /* XPYAVKit.docc */,
-				CDFDAB632B9F0BAB00C088C1 /* XPYAVUtils.h */,
-				CDFDAB642B9F0BAB00C088C1 /* XPYAVUtils.m */,
 			);
 			path = XPYAVKit;
 			sourceTree = "<group>";
@@ -289,6 +327,7 @@
 				CDDF2F0F2BBD53B400043A79 /* XPYGLProgram.h in Headers */,
 				CD6008F82BAA8A1800897577 /* XPYVideoCapture.h in Headers */,
 				CDFDAB612B9ED9F200C088C1 /* XPYAudioCapture.h in Headers */,
+				CD99014A2BD0C14100EDF31C /* XPYVideoFrameSorter.h in Headers */,
 				CDDF2F052BBD46D500043A79 /* XPYTextureFrame.h in Headers */,
 				CD6008F42BAA899500897577 /* XPYVideoEncoder.h in Headers */,
 				CD371C1E2BA41A81005BD049 /* XPYAudioEncoder.h in Headers */,
@@ -305,10 +344,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDFDAB432B9ED5BC00C088C1 /* Build configuration list for PBXNativeTarget "XPYAVDemo" */;
 			buildPhases = (
+				992FE1EE3894908E3A44A50F /* [CP] Check Pods Manifest.lock */,
 				CDFDAB262B9ED5BB00C088C1 /* Sources */,
 				CDFDAB272B9ED5BB00C088C1 /* Frameworks */,
 				CDFDAB282B9ED5BB00C088C1 /* Resources */,
 				CDFDAB582B9ED6FE00C088C1 /* Embed Frameworks */,
+				E92293E431F4A1FB9131D8E8 /* [CP] Embed Pods Frameworks */,
+				754FF7071627E433B40D0C43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -382,10 +424,10 @@
 			files = (
 				CDFDAB3D2B9ED5BC00C088C1 /* LaunchScreen.storyboard in Resources */,
 				CDFDAB3A2B9ED5BC00C088C1 /* Assets.xcassets in Resources */,
+				CDA7EC8F2BD0FEA600CB0A14 /* final_video.mp4 in Resources */,
 				CDDF2EF22BB6BB6600043A79 /* fragment.fsh in Resources */,
 				CDDF2EF42BB6BB9300043A79 /* vertex.vsh in Resources */,
 				CDFDAB382B9ED5BB00C088C1 /* Main.storyboard in Resources */,
-				CDF2CDCD2BC93AFB0073D276 /* video_test.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +440,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		754FF7071627E433B40D0C43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XPYAVDemo/Pods-XPYAVDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XPYAVDemo/Pods-XPYAVDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XPYAVDemo/Pods-XPYAVDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		992FE1EE3894908E3A44A50F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XPYAVDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E92293E431F4A1FB9131D8E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XPYAVDemo/Pods-XPYAVDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XPYAVDemo/Pods-XPYAVDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XPYAVDemo/Pods-XPYAVDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDFDAB262B9ED5BB00C088C1 /* Sources */ = {
@@ -425,6 +526,7 @@
 				CD6008F52BAA899500897577 /* XPYVideoEncoder.m in Sources */,
 				CDDF2F102BBD53B400043A79 /* XPYGLProgram.m in Sources */,
 				CDFDAB4F2B9ED6FE00C088C1 /* XPYAVKit.docc in Sources */,
+				CD99014B2BD0C14100EDF31C /* XPYVideoFrameSorter.m in Sources */,
 				CDDF2F1C2BC186B900043A79 /* XPYTriangleView.m in Sources */,
 				CD6009002BB29C7D00897577 /* XPYMediaWriter.m in Sources */,
 				CD371C1F2BA41A81005BD049 /* XPYAudioEncoder.m in Sources */,
@@ -582,12 +684,14 @@
 		};
 		CDFDAB442B9ED5BC00C088C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F90135CEC710FA01C5E24B5 /* Pods-XPYAVDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35A6KD62ZJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XPYAVDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "相机";
@@ -612,12 +716,14 @@
 		};
 		CDFDAB452B9ED5BC00C088C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB84C26EECE5C508112E57E /* Pods-XPYAVDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35A6KD62ZJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XPYAVDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "相机";

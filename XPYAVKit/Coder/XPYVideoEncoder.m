@@ -19,9 +19,9 @@ static const NSInteger kXPYMaxEncodeFaildCount = 10;
 
 @property (nonatomic, strong) dispatch_queue_t encoderQueue;
 @property (nonatomic, strong) dispatch_semaphore_t encoderSemaphore;
-/// 刷新编码器的次数
+/// 允许重试次数
 @property (nonatomic, assign) NSInteger retrySessionCount;
-/// 编码失败次数
+/// 允许失败次数
 @property (nonatomic, assign) NSInteger encodeFaildCount;
 
 

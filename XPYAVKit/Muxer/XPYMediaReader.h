@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL audioFinished;
 /// 视频是否结束
 @property (nonatomic, assign, readonly) BOOL videoFinished;
+/// 视频帧率
+@property (nonatomic, assign, readonly) NSInteger frameRate;
 /// 视频尺寸
 @property (nonatomic, assign, readonly) CGSize videoSize;
 /// 时长
