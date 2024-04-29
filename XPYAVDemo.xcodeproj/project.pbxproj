@@ -21,6 +21,7 @@
 		CD99014A2BD0C14100EDF31C /* XPYVideoFrameSorter.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9901482BD0C14100EDF31C /* XPYVideoFrameSorter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD99014B2BD0C14100EDF31C /* XPYVideoFrameSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9901492BD0C14100EDF31C /* XPYVideoFrameSorter.m */; };
 		CDA7EC8F2BD0FEA600CB0A14 /* final_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDA7EC8E2BD0FEA600CB0A14 /* final_video.mp4 */; };
+		CDDDDB2D2BDE3C2100D700DC /* XPYFrameProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDDDB2C2BDE3C2100D700DC /* XPYFrameProducer.m */; };
 		CDDF2EF22BB6BB6600043A79 /* fragment.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDDF2EF12BB6BB6600043A79 /* fragment.fsh */; };
 		CDDF2EF42BB6BB9300043A79 /* vertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CDDF2EF32BB6BB9300043A79 /* vertex.vsh */; };
 		CDDF2F012BBD466C00043A79 /* XPYRenderView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDF2EFF2BBD466C00043A79 /* XPYRenderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -96,6 +97,8 @@
 		CD9901482BD0C14100EDF31C /* XPYVideoFrameSorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYVideoFrameSorter.h; sourceTree = "<group>"; };
 		CD9901492BD0C14100EDF31C /* XPYVideoFrameSorter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoFrameSorter.m; sourceTree = "<group>"; };
 		CDA7EC8E2BD0FEA600CB0A14 /* final_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = final_video.mp4; sourceTree = "<group>"; };
+		CDDDDB2B2BDE3C2100D700DC /* XPYFrameProducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYFrameProducer.h; sourceTree = "<group>"; };
+		CDDDDB2C2BDE3C2100D700DC /* XPYFrameProducer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYFrameProducer.m; sourceTree = "<group>"; };
 		CDDF2EF12BB6BB6600043A79 /* fragment.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = fragment.fsh; sourceTree = "<group>"; };
 		CDDF2EF32BB6BB9300043A79 /* vertex.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = vertex.vsh; sourceTree = "<group>"; };
 		CDDF2EFF2BBD466C00043A79 /* XPYRenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYRenderView.h; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 				CDF2CDC72BC905D70073D276 /* XPYEncoderViewController.m */,
 				CDF2CDC92BC9083E0073D276 /* XPYMuxerViewController.h */,
 				CDF2CDCA2BC9083E0073D276 /* XPYMuxerViewController.m */,
+				CDDDDB2B2BDE3C2100D700DC /* XPYFrameProducer.h */,
+				CDDDDB2C2BDE3C2100D700DC /* XPYFrameProducer.m */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -510,6 +515,7 @@
 				CDF2CDC82BC905D70073D276 /* XPYEncoderViewController.m in Sources */,
 				CDFDAB2F2B9ED5BB00C088C1 /* AppDelegate.m in Sources */,
 				CDFDAB402B9ED5BC00C088C1 /* main.m in Sources */,
+				CDDDDB2D2BDE3C2100D700DC /* XPYFrameProducer.m in Sources */,
 				CDFDAB322B9ED5BB00C088C1 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,6 +6,7 @@
 //
 
 #import "XPYMuxerViewController.h"
+#import "XPYFrameProducer.h"
 #import <FURenderKit/FURenderKit.h>
 #import <XPYAVKit/XPYAVKit.h>
 
@@ -13,13 +14,15 @@
 
 @property (nonatomic, strong) XPYMediaReader *reader;
 @property (nonatomic, strong) XPYVideoDecoder *videoDecoder;
-@property (nonatomic, strong) XPYVideoFrameSorter *videoFrameSorter;
+//@property (nonatomic, strong) XPYVideoFrameSorter *videoFrameSorter;
 
 @property (nonatomic, strong) FUGLDisplayView *displayView;
 
 @property (nonatomic, strong) CADisplayLink *displayLink;
 
 @property (nonatomic, strong) dispatch_semaphore_t semaphore;
+
+@property (nonatomic, strong) XPYFrameProducer *producer;
 
 @end
 
@@ -39,13 +42,16 @@
     self.displayView = [[FUGLDisplayView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.displayView];
     
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"final_video" ofType:@"mp4"]];
-    XPYMediaReaderConfig *config = [XPYMediaReaderConfig new];
-    config.mediaType = XPYMediaTypeVideo;
-    self.reader = [[XPYMediaReader alloc] initWithURL:url config:config];
     
-    self.videoDecoder = [[XPYVideoDecoder alloc] init];
-    self.videoDecoder.delegate = self;
+    
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"final_video" ofType:@"mp4"]];
+    self.producer = [[XPYFrameProducer alloc] initWithMediaURL:url];
+//    XPYMediaReaderConfig *config = [XPYMediaReaderConfig new];
+//    config.mediaType = XPYMediaTypeVideo;
+//    self.reader = [[XPYMediaReader alloc] initWithURL:url config:config];
+//    
+//    self.videoDecoder = [[XPYVideoDecoder alloc] init];
+//    self.videoDecoder.delegate = self;
 
     self.semaphore = dispatch_semaphore_create(1);
 }
@@ -60,8 +66,6 @@
 
 - (void)dealloc {
     NSLog(@"----dealloc----");
-    [self.reader cancel];
-//    self.
 }
 
 
@@ -82,15 +86,18 @@ CFAbsoluteTime last = 0;
 }
 
 - (void)startAction:(UIButton *)sender {
-    [self.reader startWithCompletion:^(BOOL success, NSError * _Nonnull error) {
-        if (success) {
-            dispatch_async(dispatch_get_global_queue(0, 0), ^{
-                self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(display:)];
-                [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
-                self.displayLink.preferredFramesPerSecond = self.reader.frameRate;
-                [[NSRunLoop currentRunLoop] run];
-            });
-        }
+    [self.producer startWithCompletion:^(BOOL success) {
+        
+    }];
+//    [self.reader startWithCompletion:^(BOOL success, NSError * _Nonnull error) {
+//        if (success) {
+//            dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//                self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(display:)];
+//                [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+//                self.displayLink.preferredFramesPerSecond = self.reader.frameRate;
+//                [[NSRunLoop currentRunLoop] run];
+//            });
+//        }
 //        dispatch_async(dispatch_get_global_queue(0, 0), ^{
 //            while (self.reader.hasVideoSampleBuffer) {
 //                CMSampleBufferRef sampleBuffer = [self.reader copyNextVideoSampleBuffer];
@@ -102,7 +109,7 @@ CFAbsoluteTime last = 0;
 //                NSLog(@"🪐解封完成");
 //            }
 //        });
-    }];
+//    }];
 }
 
 - (void)videoDecoderDidOutputPixelBuffer:(CVPixelBufferRef)pixelBuffer timeStamp:(CMTime)timeStamp {
