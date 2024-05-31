@@ -69,6 +69,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) XPYMediaType mediaType;
 
+/// 输出视频帧格式
+/// @note 默认 XPYVideoBufferFormatData
+/// XPYVideoBufferFormatData 时输出视频帧 PTS 可能是乱的
+@property (nonatomic, assign) XPYVideoBufferFormat videoBufferFormat;
+
 @end
 
 NS_ASSUME_NONNULL_END

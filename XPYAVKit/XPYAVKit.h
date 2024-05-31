@@ -20,7 +20,6 @@
 #import <XPYAVKit/XPYTextureFrame.h>
 
 #import <XPYAVKit/XPYAVUtils.h>
-#import <XPYAVKit/XPYVideoFrameSorter.h>
 
 //! Project version number for XPYAVKit.
 FOUNDATION_EXPORT double XPYAVKitVersionNumber;

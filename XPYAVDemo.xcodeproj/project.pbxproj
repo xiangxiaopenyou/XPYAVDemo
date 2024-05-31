@@ -18,8 +18,6 @@
 		CD6008F92BAA8A1800897577 /* XPYVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */; };
 		CD6008FF2BB29C7D00897577 /* XPYMediaWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD6009002BB29C7D00897577 /* XPYMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */; };
-		CD99014A2BD0C14100EDF31C /* XPYVideoFrameSorter.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9901482BD0C14100EDF31C /* XPYVideoFrameSorter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD99014B2BD0C14100EDF31C /* XPYVideoFrameSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9901492BD0C14100EDF31C /* XPYVideoFrameSorter.m */; };
 		CDA7EC8F2BD0FEA600CB0A14 /* final_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDA7EC8E2BD0FEA600CB0A14 /* final_video.mp4 */; };
 		CDDDDB2D2BDE3C2100D700DC /* XPYFrameProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDDDB2C2BDE3C2100D700DC /* XPYFrameProducer.m */; };
 		CDDF2EF22BB6BB6600043A79 /* fragment.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDDF2EF12BB6BB6600043A79 /* fragment.fsh */; };
@@ -54,6 +52,7 @@
 		CDFDAB652B9F0BAB00C088C1 /* XPYAVUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFDAB632B9F0BAB00C088C1 /* XPYAVUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDFDAB662B9F0BAB00C088C1 /* XPYAVUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDAB642B9F0BAB00C088C1 /* XPYAVUtils.m */; };
 		CDFDAB682BA2DCE900C088C1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = CDFDAB672BA2DCE900C088C1 /* PrivacyInfo.xcprivacy */; };
+		E3EE4FC32BEB635A00E0E77F /* XPYVideoFrameList.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EE4FC22BEB635A00E0E77F /* XPYVideoFrameList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +93,6 @@
 		CD6008F72BAA8A1800897577 /* XPYVideoCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoCapture.m; sourceTree = "<group>"; };
 		CD6008FD2BB29C7D00897577 /* XPYMediaWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMediaWriter.h; sourceTree = "<group>"; };
 		CD6008FE2BB29C7D00897577 /* XPYMediaWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMediaWriter.m; sourceTree = "<group>"; };
-		CD9901482BD0C14100EDF31C /* XPYVideoFrameSorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYVideoFrameSorter.h; sourceTree = "<group>"; };
-		CD9901492BD0C14100EDF31C /* XPYVideoFrameSorter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoFrameSorter.m; sourceTree = "<group>"; };
 		CDA7EC8E2BD0FEA600CB0A14 /* final_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = final_video.mp4; sourceTree = "<group>"; };
 		CDDDDB2B2BDE3C2100D700DC /* XPYFrameProducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYFrameProducer.h; sourceTree = "<group>"; };
 		CDDDDB2C2BDE3C2100D700DC /* XPYFrameProducer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYFrameProducer.m; sourceTree = "<group>"; };
@@ -137,6 +134,8 @@
 		CDFDAB632B9F0BAB00C088C1 /* XPYAVUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAVUtils.h; sourceTree = "<group>"; };
 		CDFDAB642B9F0BAB00C088C1 /* XPYAVUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYAVUtils.m; sourceTree = "<group>"; };
 		CDFDAB672BA2DCE900C088C1 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E3EE4FC12BEB635A00E0E77F /* XPYVideoFrameList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYVideoFrameList.h; sourceTree = "<group>"; };
+		E3EE4FC22BEB635A00E0E77F /* XPYVideoFrameList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYVideoFrameList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +180,6 @@
 			children = (
 				CDFDAB632B9F0BAB00C088C1 /* XPYAVUtils.h */,
 				CDFDAB642B9F0BAB00C088C1 /* XPYAVUtils.m */,
-				CD9901482BD0C14100EDF31C /* XPYVideoFrameSorter.h */,
-				CD9901492BD0C14100EDF31C /* XPYVideoFrameSorter.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -255,6 +252,8 @@
 				CDF2CDCA2BC9083E0073D276 /* XPYMuxerViewController.m */,
 				CDDDDB2B2BDE3C2100D700DC /* XPYFrameProducer.h */,
 				CDDDDB2C2BDE3C2100D700DC /* XPYFrameProducer.m */,
+				E3EE4FC12BEB635A00E0E77F /* XPYVideoFrameList.h */,
+				E3EE4FC22BEB635A00E0E77F /* XPYVideoFrameList.m */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -332,7 +331,6 @@
 				CDDF2F0F2BBD53B400043A79 /* XPYGLProgram.h in Headers */,
 				CD6008F82BAA8A1800897577 /* XPYVideoCapture.h in Headers */,
 				CDFDAB612B9ED9F200C088C1 /* XPYAudioCapture.h in Headers */,
-				CD99014A2BD0C14100EDF31C /* XPYVideoFrameSorter.h in Headers */,
 				CDDF2F052BBD46D500043A79 /* XPYTextureFrame.h in Headers */,
 				CD6008F42BAA899500897577 /* XPYVideoEncoder.h in Headers */,
 				CD371C1E2BA41A81005BD049 /* XPYAudioEncoder.h in Headers */,
@@ -515,6 +513,7 @@
 				CDF2CDC82BC905D70073D276 /* XPYEncoderViewController.m in Sources */,
 				CDFDAB2F2B9ED5BB00C088C1 /* AppDelegate.m in Sources */,
 				CDFDAB402B9ED5BC00C088C1 /* main.m in Sources */,
+				E3EE4FC32BEB635A00E0E77F /* XPYVideoFrameList.m in Sources */,
 				CDDDDB2D2BDE3C2100D700DC /* XPYFrameProducer.m in Sources */,
 				CDFDAB322B9ED5BB00C088C1 /* SceneDelegate.m in Sources */,
 			);
@@ -532,7 +531,6 @@
 				CD6008F52BAA899500897577 /* XPYVideoEncoder.m in Sources */,
 				CDDF2F102BBD53B400043A79 /* XPYGLProgram.m in Sources */,
 				CDFDAB4F2B9ED6FE00C088C1 /* XPYAVKit.docc in Sources */,
-				CD99014B2BD0C14100EDF31C /* XPYVideoFrameSorter.m in Sources */,
 				CDDF2F1C2BC186B900043A79 /* XPYTriangleView.m in Sources */,
 				CD6009002BB29C7D00897577 /* XPYMediaWriter.m in Sources */,
 				CD371C1F2BA41A81005BD049 /* XPYAudioEncoder.m in Sources */,

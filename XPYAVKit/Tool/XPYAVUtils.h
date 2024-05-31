@@ -17,6 +17,16 @@ typedef NS_ENUM(NSInteger, XPYMediaType) {
     XPYMediaTypeBoth = XPYMediaTypeAudio | XPYMediaTypeVideo   // 音视频
 };
 
+/// 视频帧格式
+typedef NS_ENUM(NSUInteger, XPYVideoBufferFormat) {
+    XPYVideoBufferFormatData = 0,   // 原始数据，对应 CMSampleBuffer 中的 CMBlockBuffer
+    
+    /// 对应 CMSampleBuffer 中的 CVImageBuffer
+    XPYVideoBufferFormatBGRA,   // kCVPixelFormatType_32BGRA
+    XPYVideoBufferFormat420v,   // kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange
+    XPYVideoBufferFormat420f    // kCVPixelFormatType_420YpCbCr8BiPlanarFullRange
+};
+
 typedef NS_ENUM(NSUInteger, XPYVideoOrientation) {
     XPYVideoOrientationPortrait = 0,
     XPYVideoOrientationRight,

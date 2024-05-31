@@ -243,7 +243,7 @@ static const int kXPYMaximumNumberInQueue = 3;
                 // 当前视频队列中的帧数小于最大限制，需要取帧入队
                 CMSampleBufferRef sampleBuffer = [self.videoOutput copyNextSampleBuffer];
                 if (sampleBuffer) {
-                    if (CMSampleBufferGetDataBuffer(sampleBuffer)) {
+                    if (CMSampleBufferGetDataBuffer(sampleBuffer) || CMSampleBufferGetImageBuffer(sampleBuffer)) {
                         dispatch_semaphore_wait(self.videoSemaphore, DISPATCH_TIME_FOREVER);
                         CMSimpleQueueEnqueue(videoQueue, sampleBuffer);
                         dispatch_semaphore_signal(self.videoSemaphore);
@@ -354,7 +354,25 @@ static const int kXPYMaximumNumberInQueue = 3;
             }
             
             // 创建视频输出
-            _videoOutput = [[AVAssetReaderTrackOutput alloc] initWithTrack:videoTrack outputSettings:nil];
+            NSDictionary *settings = nil;
+            if (self.config.videoBufferFormat != XPYVideoBufferFormatData) {
+                OSType type = kCVPixelFormatType_32BGRA;
+                switch (self.config.videoBufferFormat) {
+                    case XPYVideoBufferFormatBGRA:
+                        type = kCVPixelFormatType_32BGRA;
+                        break;
+                    case XPYVideoBufferFormat420v:
+                        type = kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange;
+                        break;
+                    case XPYVideoBufferFormat420f:
+                        type = kCVPixelFormatType_420YpCbCr8BiPlanarFullRange;
+                        break;
+                    default:
+                        break;
+                }
+                settings = @{(id)kCVPixelBufferPixelFormatTypeKey : @(type)};
+            }
+            _videoOutput = [[AVAssetReaderTrackOutput alloc] initWithTrack:videoTrack outputSettings:settings];
             _videoOutput.alwaysCopiesSampleData = NO;
             
             // 绑定视频输出
@@ -408,6 +426,7 @@ static const int kXPYMaximumNumberInQueue = 3;
     self = [super init];
     if (self) {
         _mediaType = XPYMediaTypeBoth;
+        _videoBufferFormat = XPYVideoBufferFormatData;
     }
     return self;
 }
